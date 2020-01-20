@@ -2,7 +2,10 @@
 title: Travis CI自动部署Hexo到Github Pages
 date: 2020-01-20 13:56:00
 author: xqh
-tags: hexo git ci
+tags:
+- hexo
+- git
+- ci
 categories: hexo
 ---
 
