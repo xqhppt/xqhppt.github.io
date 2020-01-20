@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="markdown," />
+  <meta name="keywords" content="hexo git ci," />
 
 
 
@@ -93,19 +93,17 @@
 
 
 
-<meta name="description" content="标题语法：12345# 一级标题## 二级标题### 二级标题 效果：一级标题二级标题二级标题列表在文字前加上-或*是无序列表，加上1.是有序列表，例如： 语法：12345678- 1- 2* 1* 21. 12. 2 效果： 1 2   1 2   1 2  引用在文本前加上&amp;gt; 图片与链接语法：12[在线Markdown编辑](http://mahua.jser.me/)![mahua](">
-<meta name="keywords" content="markdown">
+<meta name="description" content="安装Hexo 参考官网  Github令牌 创建Github Pages需要建立一个名为&amp;lt;username&amp;gt;.github.io的项目，并且部署在master分支上 注册访问令牌Github&amp;gt;settings&amp;gt;Personal access tokens&amp;gt; Generate new token &amp;gt; Generate token&amp;gt; Copy Token  注">
+<meta name="keywords" content="hexo git ci">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown语法">
-<meta property="og:url" content="http://yoursite.com/2017/06/15/markdown/index.html">
+<meta property="og:title" content="Travis CI自动部署Hexo到Github Pages">
+<meta property="og:url" content="http://yoursite.com/2020/01/20/hexo-ci-github/index.html">
 <meta property="og:site_name" content="忧忧夏天">
-<meta property="og:description" content="标题语法：12345# 一级标题## 二级标题### 二级标题 效果：一级标题二级标题二级标题列表在文字前加上-或*是无序列表，加上1.是有序列表，例如： 语法：12345678- 1- 2* 1* 21. 12. 2 效果： 1 2   1 2   1 2  引用在文本前加上&amp;gt; 图片与链接语法：12[在线Markdown编辑](http://mahua.jser.me/)![mahua](">
-<meta property="og:image" content="http://mahua.jser.me/mahua-logo.jpg">
+<meta property="og:description" content="安装Hexo 参考官网  Github令牌 创建Github Pages需要建立一个名为&amp;lt;username&amp;gt;.github.io的项目，并且部署在master分支上 注册访问令牌Github&amp;gt;settings&amp;gt;Personal access tokens&amp;gt; Generate new token &amp;gt; Generate token&amp;gt; Copy Token  注">
 <meta property="og:updated_time" content="2020-01-20T05:58:57.593Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown语法">
-<meta name="twitter:description" content="标题语法：12345# 一级标题## 二级标题### 二级标题 效果：一级标题二级标题二级标题列表在文字前加上-或*是无序列表，加上1.是有序列表，例如： 语法：12345678- 1- 2* 1* 21. 12. 2 效果： 1 2   1 2   1 2  引用在文本前加上&amp;gt; 图片与链接语法：12[在线Markdown编辑](http://mahua.jser.me/)![mahua](">
-<meta name="twitter:image" content="http://mahua.jser.me/mahua-logo.jpg">
+<meta name="twitter:title" content="Travis CI自动部署Hexo到Github Pages">
+<meta name="twitter:description" content="安装Hexo 参考官网  Github令牌 创建Github Pages需要建立一个名为&amp;lt;username&amp;gt;.github.io的项目，并且部署在master分支上 注册访问令牌Github&amp;gt;settings&amp;gt;Personal access tokens&amp;gt; Generate new token &amp;gt; Generate token&amp;gt; Copy Token  注">
 
 
 
@@ -133,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/15/markdown/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/01/20/hexo-ci-github/"/>
 
 
 
 
 
-  <title>Markdown语法 | 忧忧夏天</title>
+  <title>Travis CI自动部署Hexo到Github Pages | 忧忧夏天</title>
   
 
 
@@ -288,7 +286,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/15/markdown/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/hexo-ci-github/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xqh">
@@ -305,7 +303,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Markdown语法</h2>
+          <h2 class="post-title" itemprop="name headline">Travis CI自动部署Hexo到Github Pages</h2>
         
 
         <div class="post-meta">
@@ -317,8 +315,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-15T17:23:45+00:00">
-                2017-06-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-20T05:56:00+00:00">
+                2020-01-20
               </time>
             
 
@@ -379,54 +377,27 @@
       
 
       
-        <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line"></div><div class="line">## 二级标题</div><div class="line"></div><div class="line">### 二级标题</div></pre></td></tr></table></figure>
-<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h3><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>在文字前加上<code>-</code>或<code>*</code>是无序列表，加上<code>1.</code>是有序列表，例如：</p>
-<h4 id="语法：-1"><a href="#语法：-1" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">- 1</div><div class="line">- 2</div><div class="line"></div><div class="line">* 1</div><div class="line">* 2</div><div class="line"></div><div class="line">1. 1</div><div class="line">2. 2</div></pre></td></tr></table></figure>
-<h4 id="效果：-1"><a href="#效果：-1" class="headerlink" title="效果："></a>效果：</h4><ul>
-<li>1</li>
-<li>2</li>
-</ul>
-<ul>
-<li>1</li>
-<li>2</li>
-</ul>
-<ol>
-<li>1</li>
-<li>2</li>
+        <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><ol>
+<li>参考<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">官网</a></li>
 </ol>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>在文本前加上<code>&gt;</code></p>
-<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><h4 id="语法：-2"><a href="#语法：-2" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[在线Markdown编辑](http://mahua.jser.me/)</div><div class="line">![mahua](http://mahua.jser.me/mahua-logo.jpg)</div></pre></td></tr></table></figure>
-<h4 id="效果：-2"><a href="#效果：-2" class="headerlink" title="效果："></a>效果：</h4><p><a href="http://mahua.jser.me/" target="_blank" rel="external">在线Markdown编辑</a><br><img src="http://mahua.jser.me/mahua-logo.jpg" alt="mahua"></p>
-<h3 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><h4 id="语法：-3"><a href="#语法：-3" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">** 粗体 **</div><div class="line">* 斜体 *</div></pre></td></tr></table></figure>
-<h4 id="效果：-3"><a href="#效果：-3" class="headerlink" title="效果："></a>效果：</h4><p><strong> 粗体 </strong></p>
-<ul>
-<li>斜体 *</li>
-</ul>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><h4 id="语法：-4"><a href="#语法：-4" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">| 语言          | 描述          |</div><div class="line">| ------------- |:-------------:|</div><div class="line">| Java          | 好            |</div><div class="line">| .Net          | 也好          |</div></pre></td></tr></table></figure>
-<h4 id="效果：-4"><a href="#效果：-4" class="headerlink" title="效果："></a>效果：</h4><table>
-<thead>
-<tr>
-<th>语言</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java</td>
-<td style="text-align:center">好</td>
-</tr>
-<tr>
-<td>.Net</td>
-<td style="text-align:center">也好</td>
-</tr>
-</tbody>
-</table>
-<h3 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h3><h4 id="语法：-5"><a href="#语法：-5" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`var a = &apos;hello&apos;`</div></pre></td></tr></table></figure>
-<h4 id="效果：-5"><a href="#效果：-5" class="headerlink" title="效果："></a>效果：</h4><p><code>var a = &#39;hello&#39;</code></p>
-<h3 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h3><h4 id="语法：-6"><a href="#语法：-6" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1</div><div class="line">***</div><div class="line">2</div></pre></td></tr></table></figure>
-<h4 id="效果：-6"><a href="#效果：-6" class="headerlink" title="效果："></a>效果：</h4><p>1</p>
-<hr>
-<p>2</p>
+<h3 id="Github令牌"><a href="#Github令牌" class="headerlink" title="Github令牌"></a>Github令牌</h3><ol>
+<li>创建Github Pages需要建立一个名为<code>&lt;username&gt;.github.io</code>的项目，并且部署在master分支上</li>
+<li>注册访问令牌Github&gt;settings&gt;Personal access tokens&gt; Generate new token &gt; Generate token&gt; Copy Token</li>
+</ol>
+<h3 id="注册Travis-CI"><a href="#注册Travis-CI" class="headerlink" title="注册Travis CI"></a>注册Travis CI</h3><ol>
+<li>打开<a href="https://www.travis-ci.org/" target="_blank" rel="external">Travis CI</a>用github账号授权登录</li>
+<li>找到Ssetting-&gt;Repositories勾上博客项目</li>
+<li>进入项目Settings添加环境变量如<code>Name</code>为<code>GH_TOKEN</code>，<code>Value</code>为Github生成的token</li>
+</ol>
+<h3 id="配置自动部署"><a href="#配置自动部署" class="headerlink" title="配置自动部署"></a>配置自动部署</h3><ol>
+<li>Github中新建source分支</li>
+<li><p>在source分支中创建<code>.travis.yml</code>配置文件，如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">sudo: false</div><div class="line">language: node_js</div><div class="line">node_js:</div><div class="line">  - 9</div><div class="line">cache: npm</div><div class="line">branches:</div><div class="line">  only:</div><div class="line">    - source</div><div class="line">script:</div><div class="line">  - hexo generate</div><div class="line">deploy:</div><div class="line">  provider: pages</div><div class="line">  skip-cleanup: true</div><div class="line">  github-token: $GH_TOKEN</div><div class="line">  keep-history: true</div><div class="line">  committer_from_gh: true</div><div class="line">  target_branch: master</div><div class="line">  on:</div><div class="line">    branch: source</div><div class="line">  local-dir: public</div></pre></td></tr></table></figure>
+</li>
+<li><p>然后推送到github就会自动把构建好的文件发布到master分支</p>
+</li>
+<li>访问username.github.io就可以看到部署好的博客了</li>
+</ol>
 
       
     </div>
@@ -456,7 +427,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/markdown/" rel="tag"># markdown</a>
+            <a href="/tags/hexo-git-ci/" rel="tag"># hexo git ci</a>
           
         </div>
       
@@ -469,8 +440,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/15/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/10/28/spring-spring-bean-md/" rel="next" title="Spring Bean装配方式">
+                <i class="fa fa-chevron-left"></i> Spring Bean装配方式
               </a>
             
           </div>
@@ -478,10 +449,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/16/screen/" rel="prev" title="screen">
-                screen <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
