@@ -12,7 +12,7 @@ categories: java
 Java 集合框架主要包括两种类型的容器，一种是集合（Collection），存储一个元素集合，另一种是图（Map），存储键/值对映射。
 
 ## Collection结构
-![Java集合框架](java-collection-01/collection.gif)
+![Java集合框架](collection.gif)
 
 ## Collection接口
 Collection 是最基本的集合接口，一个 Collection 代表一组 Object，即 Collection 的元素, Java不提供直接继承自Collection的类，只提供继承于的子接口(如List和set)。
