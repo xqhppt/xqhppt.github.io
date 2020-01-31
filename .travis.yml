@@ -3,6 +3,9 @@ language: node_js
 node_js:
   - 9
 cache: npm
+before_install:
+  - npm install hexo-generator-sitemap --save
+  - npm install hexo-generator-baidu-sitemap --save
 branches:
   only:
     - source
