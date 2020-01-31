@@ -2,15 +2,14 @@ sudo: false
 language: node_js
 node_js:
   - 9
-cache:
-  - npm
-  - npm install hexo-generator-sitemap --save
-  - npm install hexo-generator-baidu-sitemap --save
+cache: npm
 before_install:
 branches:
   only:
     - source
 script:
+  - npm install hexo-generator-sitemap --save
+  - npm install hexo-generator-baidu-sitemap --save
   - hexo generate
 deploy:
   provider: pages
