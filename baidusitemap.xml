@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://yoursite.com/2020/01/28/java-collection-04/</loc>
-    <lastmod>2020-01-31</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2017/10/28/spring-spring-bean-md/</loc>
-    <lastmod>2020-01-31</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2020/01/21/java-collection-01/</loc>
-    <lastmod>2020-01-31</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2020/01/21/java-collection-02/</loc>
-    <lastmod>2020-01-31</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2020/01/22/java-collection-03/</loc>
-    <lastmod>2020-01-31</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2017/06/16/screen/</loc>
-    <lastmod>2020-01-31</lastmod>
-  </url>  <url>
     <loc>http://yoursite.com/2020/01/29/java-collection-05/</loc>
     <lastmod>2020-01-31</lastmod>
   </url>  <url>
@@ -28,19 +10,40 @@
     <loc>http://yoursite.com/2017/06/15/markdown/</loc>
     <lastmod>2020-01-31</lastmod>
   </url>  <url>
+    <loc>http://yoursite.com/2017/06/16/screen/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2017/10/28/spring-spring-bean-md/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/01/22/java-collection-03/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2017/06/15/hello-world/</loc>
     <lastmod>2020-01-31</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2017/06/16/hexo-help/</loc>
-    <lastmod>2020-01-31</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2020/01/20/hexo-config-visit/</loc>
+    <loc>http://yoursite.com/2017/07/01/doc-doc-index-md/</loc>
     <lastmod>2020-01-31</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2020/01/20/hexo-ci-github/</loc>
     <lastmod>2020-01-31</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2017/07/01/doc-doc-index-md/</loc>
+    <loc>http://yoursite.com/2020/01/20/hexo-config-visit/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2017/06/16/hexo-help/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/01/31/hexo-seo-sitemap/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/01/21/java-collection-01/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/01/21/java-collection-02/</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/01/28/java-collection-04/</loc>
     <lastmod>2020-01-31</lastmod>
   </url>
 </urlset>
