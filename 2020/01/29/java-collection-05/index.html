@@ -105,7 +105,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/01/29/java-collection-05/03.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/01/29/java-collection-05/02.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/01/29/java-collection-05/04.jpg">
-<meta property="og:updated_time" content="2020-01-31T08:00:10.279Z">
+<meta property="og:updated_time" content="2020-01-31T13:04:01.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java集合框架-LinkedList源码分析">
 <meta name="twitter:description" content="一、类关系图 LinkedList是基于双向链表实现的，下面简单回顾相应下数据结构基本概念。 什么是线性表？线性表是具有相同特性的数据元素的一个有限序列 线性表分类1.顺序存储，如数组 2.链式存储，如链表 什么是链表？1.链表是一种物理存储结构上非连续、非顺序的存储结构，数据元素的逻辑顺序是通过链表中的指针链接次序实现的。 2.每个元素以结点的形式存储，而每个结点都由数据域和指针域构成 链表类别">
@@ -118,7 +118,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -524,6 +524,119 @@
 
 
         </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="xqh" />
+          <p class="site-author-name" itemprop="name">xqh</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、类关系图"><span class="nav-number">1.</span> <span class="nav-text">一、类关系图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是线性表？"><span class="nav-number">1.1.</span> <span class="nav-text">什么是线性表？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性表分类"><span class="nav-number">1.2.</span> <span class="nav-text">线性表分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是链表？"><span class="nav-number">1.3.</span> <span class="nav-text">什么是链表？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链表类别"><span class="nav-number">1.4.</span> <span class="nav-text">链表类别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、源码分析"><span class="nav-number">2.</span> <span class="nav-text">二、源码分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#结构定义"><span class="nav-number">2.1.</span> <span class="nav-text">结构定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链表操作"><span class="nav-number">2.2.</span> <span class="nav-text">链表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">2.2.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加"><span class="nav-number">2.2.2.</span> <span class="nav-text">添加</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#尾部添加节点"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">尾部添加节点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#头部添加节点"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">头部添加节点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定位置添加节点"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">指定位置添加节点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除"><span class="nav-number">2.2.3.</span> <span class="nav-text">删除</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除头部"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">删除头部</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除尾部"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">删除尾部</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除指定位置"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">删除指定位置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找"><span class="nav-number">2.2.4.</span> <span class="nav-text">查找</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查找头节点或尾节点"><span class="nav-number">2.2.4.1.</span> <span class="nav-text">查找头节点或尾节点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查找指定位置节点"><span class="nav-number">2.2.4.2.</span> <span class="nav-text">查找指定位置节点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新节点"><span class="nav-number">2.2.5.</span> <span class="nav-text">更新节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清空链表"><span class="nav-number">2.2.6.</span> <span class="nav-text">清空链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fail-fast机制"><span class="nav-number">2.2.7.</span> <span class="nav-text">fail-fast机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历"><span class="nav-number">2.2.8.</span> <span class="nav-text">遍历</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、参考资料"><span class="nav-number">3.</span> <span class="nav-text">三、参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
     </main>

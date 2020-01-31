@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/17/linux-vim-operate/index.html">
 <meta property="og:site_name" content="忧忧夏天">
 <meta property="og:description" content="Vim操作三种模式 一般模式：可以进行复制、粘贴和删除等操作 编辑模式：按i或a进入编辑模式，按Esc回到一般模式 命令模式：按/或?或:进入命令模式，按Esc回到一般模式  移动操作 h j k l：用来控制光标移动 gg：返回顶部 G：回到底部 :n：跳到n行（n是数字） ctrl+f和ctrl+b：屏幕向前向后滚动 0和shift+4：回到本行头和尾  退出编辑器 :w和:wq：保存和保存退">
-<meta property="og:updated_time" content="2020-01-31T08:00:10.283Z">
+<meta property="og:updated_time" content="2020-01-31T13:04:01.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim基本操作">
 <meta name="twitter:description" content="Vim操作三种模式 一般模式：可以进行复制、粘贴和删除等操作 编辑模式：按i或a进入编辑模式，按Esc回到一般模式 命令模式：按/或?或:进入命令模式，按Esc回到一般模式  移动操作 h j k l：用来控制光标移动 gg：返回顶部 G：回到底部 :n：跳到n行（n是数字） ctrl+f和ctrl+b：屏幕向前向后滚动 0和shift+4：回到本行头和尾  退出编辑器 :w和:wq：保存和保存退">
@@ -112,7 +112,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -535,6 +535,119 @@
 
 
         </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="xqh" />
+          <p class="site-author-name" itemprop="name">xqh</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vim操作"><span class="nav-number">1.</span> <span class="nav-text">Vim操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#三种模式"><span class="nav-number">1.1.</span> <span class="nav-text">三种模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动操作"><span class="nav-number">1.2.</span> <span class="nav-text">移动操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#退出编辑器"><span class="nav-number">1.3.</span> <span class="nav-text">退出编辑器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#复制多行"><span class="nav-number">1.3.1.</span> <span class="nav-text">复制多行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制部分"><span class="nav-number">1.3.2.</span> <span class="nav-text">复制部分</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除"><span class="nav-number">1.4.</span> <span class="nav-text">删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销重做"><span class="nav-number">1.5.</span> <span class="nav-text">撤销重做</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释和取消"><span class="nav-number">1.6.</span> <span class="nav-text">注释和取消</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.6.1.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取消"><span class="nav-number">1.6.2.</span> <span class="nav-text">取消</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索"><span class="nav-number">1.7.</span> <span class="nav-text">搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim粘贴格式问题"><span class="nav-number">1.8.</span> <span class="nav-text">vim粘贴格式问题</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
     </main>
