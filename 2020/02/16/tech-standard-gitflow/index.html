@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="技术管理,GitFlow,流程规范," />
 
 
 
@@ -93,17 +93,19 @@
 
 
 
-<meta name="description" content="配置 找到themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;footer.swig 加入如下代码 12345678&amp;#123;% if theme.footer.counter %&amp;#125;    &amp;lt;script async src=&amp;quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.min">
-<meta name="keywords" content="hexo">
+<meta name="description" content="什么是GitFlow就像代码规范一样，Git Flow是一套代码管理时的行为规范。 为什么需要GitFlow存在问题 多人开发版本管理混乱 多个功能开发版本管理难 不同环境版本管理混乱 版本分支众多命名混轮 其他等等…  GitFlow规范先看流程图如下：  常用分支master分支用来保存线上已发布的最新版本，该分支只能从其他分支合并过来不能直接修改。 develop分支主开发分支，包含发布到下">
+<meta name="keywords" content="技术管理,GitFlow,流程规范">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo配置阅读访问量">
-<meta property="og:url" content="http://yoursite.com/2020/01/20/hexo-config-visit/index.html">
+<meta property="og:title" content="GitFlow实践">
+<meta property="og:url" content="http://yoursite.com/2020/02/16/tech-standard-gitflow/index.html">
 <meta property="og:site_name" content="忧忧夏天">
-<meta property="og:description" content="配置 找到themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;footer.swig 加入如下代码 12345678&amp;#123;% if theme.footer.counter %&amp;#125;    &amp;lt;script async src=&amp;quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.min">
-<meta property="og:updated_time" content="2020-02-16T15:26:19.492Z">
+<meta property="og:description" content="什么是GitFlow就像代码规范一样，Git Flow是一套代码管理时的行为规范。 为什么需要GitFlow存在问题 多人开发版本管理混乱 多个功能开发版本管理难 不同环境版本管理混乱 版本分支众多命名混轮 其他等等…  GitFlow规范先看流程图如下：  常用分支master分支用来保存线上已发布的最新版本，该分支只能从其他分支合并过来不能直接修改。 develop分支主开发分支，包含发布到下">
+<meta property="og:image" content="http://yoursite.com/2020/02/16/tech-standard-gitflow/git-flow.png">
+<meta property="og:updated_time" content="2020-02-16T15:26:19.496Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo配置阅读访问量">
-<meta name="twitter:description" content="配置 找到themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;footer.swig 加入如下代码 12345678&amp;#123;% if theme.footer.counter %&amp;#125;    &amp;lt;script async src=&amp;quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.min">
+<meta name="twitter:title" content="GitFlow实践">
+<meta name="twitter:description" content="什么是GitFlow就像代码规范一样，Git Flow是一套代码管理时的行为规范。 为什么需要GitFlow存在问题 多人开发版本管理混乱 多个功能开发版本管理难 不同环境版本管理混乱 版本分支众多命名混轮 其他等等…  GitFlow规范先看流程图如下：  常用分支master分支用来保存线上已发布的最新版本，该分支只能从其他分支合并过来不能直接修改。 develop分支主开发分支，包含发布到下">
+<meta name="twitter:image" content="http://yoursite.com/2020/02/16/tech-standard-gitflow/git-flow.png">
 
 
 
@@ -131,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/01/20/hexo-config-visit/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/02/16/tech-standard-gitflow/"/>
 
 
 
 
 
-  <title>Hexo配置阅读访问量 | 忧忧夏天</title>
+  <title>GitFlow实践 | 忧忧夏天</title>
   
 
 
@@ -286,7 +288,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/hexo-config-visit/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/16/tech-standard-gitflow/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xqh">
@@ -303,7 +305,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hexo配置阅读访问量</h2>
+          <h2 class="post-title" itemprop="name headline">GitFlow实践</h2>
         
 
         <div class="post-meta">
@@ -315,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-20T06:35:00+00:00">
-                2020-01-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-16T03:23:00+00:00">
+                2020-02-16
               </time>
             
 
@@ -338,8 +340,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
                   </a>
                 </span>
 
@@ -377,14 +379,64 @@
       
 
       
-        <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ol>
-<li>找到themes-&gt;next-&gt;layout-&gt;_partials-&gt;footer.swig</li>
-<li><p>加入如下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;% if theme.footer.counter %&#125;</div><div class="line">    &lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</div><div class="line">    &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;本站总访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次&lt;/span&gt;</div><div class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</div><div class="line">    &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;本站访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人&lt;/span&gt;</div><div class="line">&#123;% endif %&#125;</div><div class="line"></div><div class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>在themes-&gt;next-&gt;_config.yml中加检查配置，没有则添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">busuanzi_count:</div><div class="line">  # count values only if the other configs are false</div><div class="line">  enable: true</div><div class="line">  # custom uv span for the whole site</div><div class="line">  site_uv: true</div><div class="line">  site_uv_header: &lt;i class=&quot;fa fa-user&quot;&gt; 本站访客数&lt;/i&gt;</div><div class="line">  site_uv_footer: 次</div><div class="line">  # custom pv span for the whole site</div><div class="line">  site_pv: true</div><div class="line">  site_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt; 本站总访问量&lt;/i&gt;</div><div class="line">  site_pv_footer: 次</div><div class="line">  # custom pv span for one page only</div><div class="line">  page_pv: true</div><div class="line">  page_pv_header: &lt;i class=&quot;fa fa-file-o&quot;&gt; 本文总阅读量&lt;/i&gt;</div><div class="line">  page_pv_footer: 次</div></pre></td></tr></table></figure>
-</li>
+        <h2 id="什么是GitFlow"><a href="#什么是GitFlow" class="headerlink" title="什么是GitFlow"></a>什么是GitFlow</h2><p>就像代码规范一样，Git Flow是一套代码管理时的行为规范。</p>
+<h2 id="为什么需要GitFlow"><a href="#为什么需要GitFlow" class="headerlink" title="为什么需要GitFlow"></a>为什么需要GitFlow</h2><h3 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h3><ol>
+<li>多人开发版本管理混乱</li>
+<li>多个功能开发版本管理难</li>
+<li>不同环境版本管理混乱</li>
+<li>版本分支众多命名混轮</li>
+<li>其他等等…</li>
+</ol>
+<h2 id="GitFlow规范"><a href="#GitFlow规范" class="headerlink" title="GitFlow规范"></a>GitFlow规范</h2><p>先看流程图如下：</p>
+<p><img src="git-flow.png" alt="HashMap关系图"></p>
+<h3 id="常用分支"><a href="#常用分支" class="headerlink" title="常用分支"></a>常用分支</h3><h4 id="master分支"><a href="#master分支" class="headerlink" title="master分支"></a>master分支</h4><p>用来保存线上已发布的最新版本，该分支只能从其他分支合并过来不能直接修改。</p>
+<h4 id="develop分支"><a href="#develop分支" class="headerlink" title="develop分支"></a>develop分支</h4><p>主开发分支，包含发布到下一个release版本的代码，主要是从feature分支合并过来不能直接修改。</p>
+<h4 id="feature分支"><a href="#feature分支" class="headerlink" title="feature分支"></a>feature分支</h4><p>新功能开发分支，父分支为develop分支，开发完成后合并到develop分支。</p>
+<h4 id="release分支"><a href="#release分支" class="headerlink" title="release分支"></a>release分支</h4><p>当你需要发布版本时候，基于develop分支创建release分支。</p>
+<h4 id="hotfix分支"><a href="#hotfix分支" class="headerlink" title="hotfix分支"></a>hotfix分支</h4><p>当你线上版本出现Bug后基于master分支创建hotfix分支进行代码修复。</p>
+<blockquote>
+<p>上面只是一些基础概念我们来看看实际开发中应该如何进行，分支的创建可以手动也可以是基于运维平台。</p>
+</blockquote>
+<h3 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h3><h4 id="项目创建"><a href="#项目创建" class="headerlink" title="项目创建"></a>项目创建</h4><ol>
+<li>默认远程仓库(github或gitlab等)项目分支是master。</li>
+</ol>
+<h4 id="开发功能（1-0版本）"><a href="#开发功能（1-0版本）" class="headerlink" title="开发功能（1.0版本）"></a>开发功能（1.0版本）</h4><ol>
+<li>基于master分支生成一个develop分支<code>develop/1.0.0</code></li>
+<li>同学A从<code>develop/1.0.0</code>生成一个<code>feature/1.0.0</code></li>
+</ol>
+<blockquote>
+<p>如果有多人开发不同模块代码冲突几率小可以共用一个feature分支，如果协作复杂可以每个人生成一个分支如feature/1.0.0.A</p>
+</blockquote>
+<ol>
+<li>自测完成后把代码合并到<code>develop/1.0.0</code>分支进行测试。</li>
+</ol>
+<blockquote>
+<p>当有多人开发1.0版本功能时候，按具体项目计划合并自测并提测</p>
+</blockquote>
+<ol>
+<li><code>develop/1.0.0</code>分支测试通过后基于此分支创建release分支并进行预发布测试</li>
+</ol>
+<blockquote>
+<p>如果开发过程中有其他版本发布必须把master代码合并到此release分支</p>
+<p>如果在release分支发现bug可以在release分支上修改bug,当然也可以回退到相应的feature分支</p>
+</blockquote>
+<h4 id="发布项目"><a href="#发布项目" class="headerlink" title="发布项目"></a>发布项目</h4><ol>
+<li>测试通过后把对应的release分支发布上线，然后线上回归过后把release分支合并回master和develop分支。</li>
+</ol>
+<blockquote>
+<p>如果是重要版本可以基于master版本打对应tag</p>
+</blockquote>
+<h4 id="线上BUG修复"><a href="#线上BUG修复" class="headerlink" title="线上BUG修复"></a>线上BUG修复</h4><ol>
+<li>如果上线后发现bug需要紧急修复，从master分支拉取hotfix分支并修改测试。</li>
+<li>测试通过后把hotfix分支合并回master和develop分支</li>
+</ol>
+<h4 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h4><ol>
+<li>规范各个分支版本命名规则如feature/xxx方便管理</li>
+<li>在合并release之前检查有没有其他版本在开发过程中上线</li>
+<li>定期删除无用分支</li>
+<li>每次commit都有对应说明可以的话加上bug号</li>
+<li>合理划分每个分支权限以及开发人员权限</li>
+<li>通过相应的运维平台自动来约定检查发布</li>
 </ol>
 
       
@@ -415,7 +467,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/技术管理/" rel="tag"># 技术管理</a>
+          
+            <a href="/tags/GitFlow/" rel="tag"># GitFlow</a>
+          
+            <a href="/tags/流程规范/" rel="tag"># 流程规范</a>
           
         </div>
       
@@ -428,8 +484,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/01/20/hexo-ci-github/" rel="next" title="Travis CI自动部署Hexo到Github Pages">
-                <i class="fa fa-chevron-left"></i> Travis CI自动部署Hexo到Github Pages
+              <a href="/2020/01/31/zookeeper-01/" rel="next" title="ZooKeeper介绍">
+                <i class="fa fa-chevron-left"></i> ZooKeeper介绍
               </a>
             
           </div>
@@ -437,10 +493,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/01/21/java-collection-01/" rel="prev" title="Java集合框架-基础概念">
-                Java集合框架-基础概念 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -592,7 +644,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.</span> <span class="nav-text">配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是GitFlow"><span class="nav-number">1.</span> <span class="nav-text">什么是GitFlow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么需要GitFlow"><span class="nav-number">2.</span> <span class="nav-text">为什么需要GitFlow</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#存在问题"><span class="nav-number">2.1.</span> <span class="nav-text">存在问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitFlow规范"><span class="nav-number">3.</span> <span class="nav-text">GitFlow规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用分支"><span class="nav-number">3.1.</span> <span class="nav-text">常用分支</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#master分支"><span class="nav-number">3.1.1.</span> <span class="nav-text">master分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#develop分支"><span class="nav-number">3.1.2.</span> <span class="nav-text">develop分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#feature分支"><span class="nav-number">3.1.3.</span> <span class="nav-text">feature分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#release分支"><span class="nav-number">3.1.4.</span> <span class="nav-text">release分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hotfix分支"><span class="nav-number">3.1.5.</span> <span class="nav-text">hotfix分支</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际操作"><span class="nav-number">3.2.</span> <span class="nav-text">实际操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#项目创建"><span class="nav-number">3.2.1.</span> <span class="nav-text">项目创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发功能（1-0版本）"><span class="nav-number">3.2.2.</span> <span class="nav-text">开发功能（1.0版本）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布项目"><span class="nav-number">3.2.3.</span> <span class="nav-text">发布项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线上BUG修复"><span class="nav-number">3.2.4.</span> <span class="nav-text">线上BUG修复</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建议"><span class="nav-number">3.2.5.</span> <span class="nav-text">建议</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
