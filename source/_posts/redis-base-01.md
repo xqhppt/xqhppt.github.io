@@ -8,8 +8,10 @@ tags:
 categories: Redis
 ---
 
-# String
+## String
+
 ### get/set mget/mset
+
 
 说明：设置/批量设置键值信息，value可以是任何形式的字符串
 
@@ -23,7 +25,9 @@ categories: Redis
 
 常规缓存使用方式
 
+
 ### incr/decr
+
 
 说明：将key中的数值增/减1，如果key不存在会先初始化为0再加1，该操作是原子性的
 
@@ -39,7 +43,9 @@ categories: Redis
 
 如某篇文章点击量通过``incr article:id``来计数，用``get article:id``来获取
 
+
 ### setbit/getbit/bitcount
+
 
 说明：设置指定偏移量上的位；获取指定偏移量上的位；指定key中，位值为1的数量
 
@@ -57,7 +63,9 @@ categories: Redis
 
 如日活跃人数，通过``setbit dayactive:yyyyMMdd userid 1``，通过``bitcount dayactive:yyyyMMdd``来获取
 
+
 ### setnx/getset
+
 
 说明：当key不存在时候将key的值设为value，存在不做操作；将key的值设为value，并返回key的旧值
 
@@ -72,9 +80,12 @@ categories: Redis
 分布式锁实现
 
 
-# Hash
+
+## Hash
+
 
 ### hset/hget/hkeys/hgetall
+
 
 说明：当key不存在时候将key的值设为value，存在不做操作；将key的值设为value，并返回key的旧值
 
@@ -104,9 +115,12 @@ categories: Redis
 通过``hget user:userid name``获取某个属性
 
 
-# List
+
+## List
+
 
 ### lpush/rpop/brpop/lrange/llen
+
 
 说明：list是redis比较重要的一个数据结构，支持插入列表、弹出队列、阻塞弹出队列、返回列表元素、获取列表长度等操作
 
@@ -125,9 +139,12 @@ categories: Redis
 如生产者往队列中插入消息``lpush queue:topic:name msg``，消费者通过``rpop ls``和``brpop ls 10``来消费消息
 
 
-# Set
+
+## Set
+
 
 ### sadd/srem/sdiff/sinter/smembers/sunion 
+
 
 说明：实现了集合相关的添加、删除、差集、交集、并集等操作
 
@@ -144,9 +161,12 @@ categories: Redis
 如关注我的人，通过``sadd user:myid 10``来关注我，通过``smembers user:myid``来获取关注我的人
 
 
-# SortedSet
+
+## SortedSet
+
 
 ### zadd/zrem/zcard/zrange/zrank/zrangebyscore 
+
 
 说明：可以添加元素的权重和值到key中，并按权重来获取序列
 
