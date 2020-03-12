@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2020/03/12/redis-base-01/index.html">
 <meta property="og:site_name" content="忧忧夏天">
 <meta property="og:description" content="Stringget/set mget/mset说明：设置/批量设置键值信息，value可以是任何形式的字符串 用法： set key value get key 场景： 常规缓存使用方式 incr/decr说明：将key中的数值增/减1，如果key不存在会先初始化为0再加1，该操作是原子性的 用法： incr key get key 场景： 结合expire用做计数器和限数器 如某篇文章点击量通过">
-<meta property="og:updated_time" content="2020-03-12T09:03:54.080Z">
+<meta property="og:updated_time" content="2020-03-12T09:08:49.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Redis数据类型的使用场景">
 <meta name="twitter:description" content="Stringget/set mget/mset说明：设置/批量设置键值信息，value可以是任何形式的字符串 用法： set key value get key 场景： 常规缓存使用方式 incr/decr说明：将key中的数值增/减1，如果key不存在会先初始化为0再加1，该操作是原子性的 用法： incr key get key 场景： 结合expire用做计数器和限数器 如某篇文章点击量通过">
@@ -377,7 +377,7 @@
       
 
       
-        <h1 id="String"><a href="#String" class="headerlink" title="String"></a>String</h1><h3 id="get-set-mget-mset"><a href="#get-set-mget-mset" class="headerlink" title="get/set mget/mset"></a>get/set mget/mset</h3><p>说明：设置/批量设置键值信息，value可以是任何形式的字符串</p>
+        <h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><h3 id="get-set-mget-mset"><a href="#get-set-mget-mset" class="headerlink" title="get/set mget/mset"></a>get/set mget/mset</h3><p>说明：设置/批量设置键值信息，value可以是任何形式的字符串</p>
 <p>用法：</p>
 <p><code>set key value</code></p>
 <p><code>get key</code></p>
@@ -404,7 +404,7 @@
 <p><code>getset a 22</code></p>
 <p>场景：</p>
 <p>分布式锁实现</p>
-<h1 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h1><h3 id="hset-hget-hkeys-hgetall"><a href="#hset-hget-hkeys-hgetall" class="headerlink" title="hset/hget/hkeys/hgetall"></a>hset/hget/hkeys/hgetall</h3><p>说明：当key不存在时候将key的值设为value，存在不做操作；将key的值设为value，并返回key的旧值</p>
+<h2 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h2><h3 id="hset-hget-hkeys-hgetall"><a href="#hset-hget-hkeys-hgetall" class="headerlink" title="hset/hget/hkeys/hgetall"></a>hset/hget/hkeys/hgetall</h3><p>说明：当key不存在时候将key的值设为value，存在不做操作；将key的值设为value，并返回key的旧值</p>
 <p>用法：</p>
 <p><code>hset key field value</code></p>
 <p><code>hget key field</code></p>
@@ -417,7 +417,7 @@
 <p>通过<code>hmset user:userid name lily age 18 sex 1</code>来存储</p>
 <p>通过<code>hgetall user:userid</code>获取全部内容</p>
 <p>通过<code>hget user:userid name</code>获取某个属性</p>
-<h1 id="List"><a href="#List" class="headerlink" title="List"></a>List</h1><h3 id="lpush-rpop-brpop-lrange-llen"><a href="#lpush-rpop-brpop-lrange-llen" class="headerlink" title="lpush/rpop/brpop/lrange/llen"></a>lpush/rpop/brpop/lrange/llen</h3><p>说明：list是redis比较重要的一个数据结构，支持插入列表、弹出队列、阻塞弹出队列、返回列表元素、获取列表长度等操作</p>
+<h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><h3 id="lpush-rpop-brpop-lrange-llen"><a href="#lpush-rpop-brpop-lrange-llen" class="headerlink" title="lpush/rpop/brpop/lrange/llen"></a>lpush/rpop/brpop/lrange/llen</h3><p>说明：list是redis比较重要的一个数据结构，支持插入列表、弹出队列、阻塞弹出队列、返回列表元素、获取列表长度等操作</p>
 <p>用法：</p>
 <p><code>lpush ls 1 2 3 4 5</code></p>
 <p><code>lrange ls 0 -1</code></p>
@@ -425,14 +425,14 @@
 <p>列表、消息队列等</p>
 <p>如列表反向cache，通过列表存储数据库存储信息，然后在从数据库中获取详细信息</p>
 <p>如生产者往队列中插入消息<code>lpush queue:topic:name msg</code>，消费者通过<code>rpop ls</code>和<code>brpop ls 10</code>来消费消息</p>
-<h1 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h1><h3 id="sadd-srem-sdiff-sinter-smembers-sunion"><a href="#sadd-srem-sdiff-sinter-smembers-sunion" class="headerlink" title="sadd/srem/sdiff/sinter/smembers/sunion"></a>sadd/srem/sdiff/sinter/smembers/sunion</h3><p>说明：实现了集合相关的添加、删除、差集、交集、并集等操作</p>
+<h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h2><h3 id="sadd-srem-sdiff-sinter-smembers-sunion"><a href="#sadd-srem-sdiff-sinter-smembers-sunion" class="headerlink" title="sadd/srem/sdiff/sinter/smembers/sunion"></a>sadd/srem/sdiff/sinter/smembers/sunion</h3><p>说明：实现了集合相关的添加、删除、差集、交集、并集等操作</p>
 <p>用法：</p>
 <p><code>sadd s1 1 2 3 5 6</code></p>
 <p><code>sinter s1 s2</code></p>
 <p>场景：</p>
 <p>好友、关注、被关注、共同好友等</p>
 <p>如关注我的人，通过<code>sadd user:myid 10</code>来关注我，通过<code>smembers user:myid</code>来获取关注我的人</p>
-<h1 id="SortedSet"><a href="#SortedSet" class="headerlink" title="SortedSet"></a>SortedSet</h1><h3 id="zadd-zrem-zcard-zrange-zrank-zrangebyscore"><a href="#zadd-zrem-zcard-zrange-zrank-zrangebyscore" class="headerlink" title="zadd/zrem/zcard/zrange/zrank/zrangebyscore"></a>zadd/zrem/zcard/zrange/zrank/zrangebyscore</h3><p>说明：可以添加元素的权重和值到key中，并按权重来获取序列</p>
+<h2 id="SortedSet"><a href="#SortedSet" class="headerlink" title="SortedSet"></a>SortedSet</h2><h3 id="zadd-zrem-zcard-zrange-zrank-zrangebyscore"><a href="#zadd-zrem-zcard-zrange-zrank-zrangebyscore" class="headerlink" title="zadd/zrem/zcard/zrange/zrank/zrangebyscore"></a>zadd/zrem/zcard/zrange/zrank/zrangebyscore</h3><p>说明：可以添加元素的权重和值到key中，并按权重来获取序列</p>
 <p>用法：</p>
 <p><code>zadd ls 10 a1 6 a2 17 a3</code></p>
 <p><code>zrange ls 0 -1</code></p>
@@ -643,7 +643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#String"><span class="nav-number">1.</span> <span class="nav-text">String</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get-set-mget-mset"><span class="nav-number">1.0.1.</span> <span class="nav-text">get/set mget/mset</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#incr-decr"><span class="nav-number">1.0.2.</span> <span class="nav-text">incr/decr</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setbit-getbit-bitcount"><span class="nav-number">1.0.3.</span> <span class="nav-text">setbit/getbit/bitcount</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setnx-getset"><span class="nav-number">1.0.4.</span> <span class="nav-text">setnx/getset</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hash"><span class="nav-number">2.</span> <span class="nav-text">Hash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hset-hget-hkeys-hgetall"><span class="nav-number">2.0.1.</span> <span class="nav-text">hset/hget/hkeys/hgetall</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#List"><span class="nav-number">3.</span> <span class="nav-text">List</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lpush-rpop-brpop-lrange-llen"><span class="nav-number">3.0.1.</span> <span class="nav-text">lpush/rpop/brpop/lrange/llen</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Set"><span class="nav-number">4.</span> <span class="nav-text">Set</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sadd-srem-sdiff-sinter-smembers-sunion"><span class="nav-number">4.0.1.</span> <span class="nav-text">sadd/srem/sdiff/sinter/smembers/sunion</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SortedSet"><span class="nav-number">5.</span> <span class="nav-text">SortedSet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#zadd-zrem-zcard-zrange-zrank-zrangebyscore"><span class="nav-number">5.0.1.</span> <span class="nav-text">zadd/zrem/zcard/zrange/zrank/zrangebyscore</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#String"><span class="nav-number">1.</span> <span class="nav-text">String</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get-set-mget-mset"><span class="nav-number">1.1.</span> <span class="nav-text">get/set mget/mset</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#incr-decr"><span class="nav-number">1.2.</span> <span class="nav-text">incr/decr</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setbit-getbit-bitcount"><span class="nav-number">1.3.</span> <span class="nav-text">setbit/getbit/bitcount</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setnx-getset"><span class="nav-number">1.4.</span> <span class="nav-text">setnx/getset</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hash"><span class="nav-number">2.</span> <span class="nav-text">Hash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hset-hget-hkeys-hgetall"><span class="nav-number">2.1.</span> <span class="nav-text">hset/hget/hkeys/hgetall</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#List"><span class="nav-number">3.</span> <span class="nav-text">List</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lpush-rpop-brpop-lrange-llen"><span class="nav-number">3.1.</span> <span class="nav-text">lpush/rpop/brpop/lrange/llen</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Set"><span class="nav-number">4.</span> <span class="nav-text">Set</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sadd-srem-sdiff-sinter-smembers-sunion"><span class="nav-number">4.1.</span> <span class="nav-text">sadd/srem/sdiff/sinter/smembers/sunion</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SortedSet"><span class="nav-number">5.</span> <span class="nav-text">SortedSet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#zadd-zrem-zcard-zrange-zrank-zrangebyscore"><span class="nav-number">5.1.</span> <span class="nav-text">zadd/zrem/zcard/zrange/zrank/zrangebyscore</span></a></li></ol></li></ol></div>
             
 
           </div>
